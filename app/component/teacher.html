@@ -1,0 +1,268 @@
+	
+	<!-- === /Header === -->
+    <gk-header></gk-header> 
+	<!-- === /Header === -->
+	
+	<div class="container bg-light pb-2" id="first">
+		<div class="row">
+			<div class="col-md-5 col-sm-12 col-lg-6 bg-black p-5 section_height" >
+				<h2 class="h1 text-center text-white mt-5 teacher_height">Teacher Registration</h2>
+				<p class="text-center text-white mt-3 font-weight-bold">Enter the personal Details and <br>Start the Journey</p>
+				<button type="button " class="rounded-pill bg-black text-white px-5 py-2 font-weight-bold teacher_button">Sign  In</button>
+			</div>
+
+			<!----First part of Registeration Form------->
+
+			<div class="col-lg-6 col-md-12 bg-whit" id="step1">
+				<div class="registration-form p-4">
+					<h2 class="h1 text-center text py-3">Registration Form</h2>
+					<div class="row pb-1 pr-auto">
+						<span><i class="fa fa-check-circle text ml-5"></i></span>
+						<p class="abc blue my-auto mx-3"></p>
+						<div>
+						<span class="fa-stack" style="font-size: 9px;">
+							<!-- The icon that will wrap the number -->
+							<span class="fa fa-circle-o fa-stack-2x"></span>
+							<!-- a strong element with the custom content, in this case a number -->
+							<strong class="fa-stack-1x">2</strong>
+						</span>
+					    </div>
+						<p class="abc bg-dark my-auto mx-3"></p>
+						<div>
+						<span class="fa-stack" style="font-size: 9px;">
+							<!-- The icon that will wrap the number -->
+							<span class="fa fa-circle-o fa-stack-2x"></span>
+							<!-- a strong element with the custom content, in this case a number -->
+							<strong class="fa-stack-1x"> 3</strong>
+						</span>
+					    </div>
+					</div>
+					<h5>Personal Details</h5>
+					<form name="">
+						<div class="row">
+							<div class="col-md-6 p-2">
+							<input type="text" class="bg-light form-control" placeholder="Enter Name" ng-model="regTeacher.name" required>
+							</div>
+							<div class="col-md-6 p-2">
+								<input type="text" class="bg-light form-control" placeholder="Enter Preferred Username" ng-model="regTeacher.userName" required>
+							</div>
+							<div class="col-md-6 p-2">
+								<input type="password" class="bg-light form-control" placeholder="Enter password" ng-model="regTeacher.password" required>
+							</div>
+							<div class="col-md-6 p-2">
+								<input type="date" class="bg-light form-control" placeholder="Date of Birth" ng-model="regTeacher.dob" required>
+							</div>
+							<div class="col-md-6 p-2">
+								<input type="text" class="bg-light form-control" placeholder="Gender" ng-model="regTeacher.gender" required>
+							</div>
+							<div class="col-md-6 p-2">
+								<input type="number" class="bg-light form-control" placeholder="Mobile Number" ng-model="regTeacher.mobile" required> 
+							</div>
+							<div class="col-md-6 p-2">
+								<input type="email" class="bg-light form-control" placeholder="Enter Gmail Id" ng-model="regTeacher.gmail" required>
+							</div>
+							<div class="col-md-6 p-2">
+								<input type="email" class="bg-light form-control" placeholder="Alternate Email Id" ng-model="regTeacher.altGmail" required>
+							</div>
+							<div class="col-md-6 m-2">
+								<div class="row">
+								<input type="file" class="col-md-7 bg-light form-control" placeholder="Upload Image" ng-model="regTeacher.file" required>
+								<button type="button" class=" col-md-5 text-white btn-sm bg-black font-weight-bold">Choose File</button>
+								</div>
+							</div>
+						</div>
+					</form>
+					<h5>Location Details</h5>
+					<form>
+						<div class="row">
+							<!--<div class="col-md-6 p-2">
+								<input type="text" class="bg-light form-control" placeholder="Address" ng-model="regTeacher.address" required>
+							</div>-->
+							<div class="col-md-6 p-2">
+								<input type="text" class="bg-light form-control" placeholder="City" ng-model="regTeacher.city" required>
+							</div>
+							<!--<div class="col-md-6 p-2">
+								<input type="text" class="bg-light form-control" placeholder="State" ng-model="regTeacher.state" required>
+							</div>-->
+							<div class="col-md-6 p-2">
+								<input type="text" class="bg-light form-control" placeholder="Country" ng-model="regTeacher.country" required>
+							</div>
+							<!--<div class="col-md-6 p-2">
+								<input type="number" class="bg-light form-control" placeholder="Pincode" ng-model="regTeacher.pincode" required>
+							</div>-->
+						</div>
+						<div class="text-right">
+							<button type="button " class="rounded-pill bg-black text-white px-5 my-4 mt-5 ml-5 px-3 py-1 btn-submit" onclick="next1()">Next</button>
+						</div>
+					</form> 
+				</div>
+		    </div>
+
+			<!----Second part of Registeration Form------->
+
+		    <div class="col-lg-6 col-md-12" id="step2">
+		        <div class="registration-form p-4">
+		    	    <h2 class="h1 text-center text py-3">Registration Form</h2>
+		        	<div class="row pb-1 pr-auto">
+						<div>
+		            	<span class="fa-stack ml-5" style="font-size: 9px;">
+		                	<!-- The icon that will wrap the number -->
+		                	<span class="fa fa-circle-o fa-stack-2x"></span>
+		                	<!-- a strong element with the custom content, in this case a number -->
+		                	<strong class="fa-stack-1x"> 1 </strong>
+						</span>
+						</div>
+		            	<p class="abc blue my-auto mx-3"></p>
+		            	<span><i class="fa fa-check-circle text ml-3"></i></span>
+						<p class="abc bg-dark my-auto mx-3"></p>
+						<div>
+		            	<span class="fa-stack" style="font-size: 9px;">
+			                <!-- The icon that will wrap the number -->
+			                <span class="fa fa-circle-o fa-stack-2x"></span>
+			                <!-- a strong element with the custom content, in this case a number -->
+			                <strong class="fa-stack-1x">
+			                    3  
+			                </strong>
+						</span>
+						</div>
+		         	</div>
+		          	<h4>Professional Details</h4>
+		            <form>
+		            	<div class="row">
+			                <div class="col-md-6 p-2">
+			                   <input type="text" class="bg-light form-control" placeholder="Institute Association" ng-model="regTeacher.institute" required>
+			                </div>
+			                <!--<div class="col-md-6 p-2">
+			                   <input type="text" class="bg-light form-control" placeholder="Letest Publications" ng-model="regTeacher.publication" required>
+			                </div>   
+			                <div class="col-md-6 p-2">
+			                 	<select name="board" class="bg-light custom-select" ng-model="regTeacher.board" required>
+			                  		<option selected disabled value="">Select Board</option>
+			                  		<option ng-repeat="x in regTeacherBoard" value="{{x}}">{{x}}</option>
+			                 	</select>
+			                </div>
+			                <div class="col-md-6 p-2">
+			                  	<select name="board" class="bg-light custom-select" ng-model="regTeacher.class" required>
+			                   		<option selected disabled value="">Select Class</option>
+			                   		<option ng-repeat="x in regTeacherClass" value="{{x}}">{{x}}</option>
+			                  	</select>
+			                </div>
+			                <div class="col-md-6 p-2">
+			                  	<select name="board" class="bg-light custom-select" ng-model="regTeacher.subject" required>
+			                    	<option selected disabled value="">Select Subject</option>
+			                    	<option ng-repeat="x in regTeacherSubject" value="{{x}}">{{x}}</option>
+			                  	</select>
+			                </div>-->
+			                <div class="col-md-6 p-2">
+			                	<label>using Institute registry</label><br>
+			                  	<label><input type="radio" name="optradio" class="ml-3"> Yes</label>
+			                  	<label class="ml-5"><input type="radio" name="optradio "> No</label>
+			                </div>  
+			            </div>
+			        </form>
+			        <h4>Educational Qualification</h4>
+			        <div class="row">
+			            <div class="col-md-6 p-2">
+			        	    <input type="text" class="bg-light form-control" placeholder="Highest Degree" ng-model="regTeacher.highestQual" required>
+			            </div>
+			            <!--<div class="col-md-6 p-2">
+			                <input type="text" class="bg-light form-control" placeholder="Subject" ng-model="regTeacher.sSubject" required>
+			            </div>-->
+			            <div class="col-md-6 p-2">
+			                <input type="text" class="bg-light form-control" placeholder="Passing out University" ng-model="regTeacher.institutePassingOut" required>
+			            </div>
+			            <!--<div class="col-md-6 p-2">
+			                <input type="text" class="bg-light form-control" placeholder="Research work" ng-model="regTeacher.researchWork" required>
+			            </div>
+			            <div class="col-md-6 p-2">
+			            	<input type="text" class="bg-light form-control" placeholder="Recommendation" ng-model="regTeacher.recommendation" required>
+			            </div>-->
+			            <div class="col-md-6 p-2">
+			            	<input type="text" class="bg-light form-control" placeholder="Any Honour recieved" ng-model="regTeacher.honour" required>
+			            </div>
+			        </div>  
+			        <div class="button mt-2">
+			            <button type="button" class="w-29 bg-black text-white text-center rounded-pill px-3 py-1 btn-submit" onclick="previous1()">Previous</button>
+			        	<button type="button" class="w-29 bg-black text-white text-center rounded-pill mx-5 px-4 py-1 float-right btn-submit" onclick="next2()">Next</button>
+			        </div>
+			    </div>
+			</div>
+
+			<!----Third part of Registeration Form------->
+
+			<div class="col-lg-6 col-md-12 h-50" id="step3">
+			   	<div class="registration-form p-4">
+			        <h3 class="h1 text-center text py-3">Registration Form</h3>
+				    <div class="row pb-1 pr-auto">
+						<div>
+				        <span class="fa-stack ml-5" style="font-size: 9px;">
+				            <!-- The icon that will wrap the number -->
+				            <span class="fa fa-circle-o fa-stack-2x"></span>
+				            <!-- a strong element with the custom content, in this case a number -->
+				   		    <strong class="fa-stack-1x">1</strong>
+						</span>
+						</div>
+				        <p class="abc bg-dark my-auto mx-3"></p>
+						<div>
+						<span class="fa-stack" style="font-size: 9px;">
+				            <!-- The icon that will wrap the number -->
+				        	<span class="fa fa-circle-o fa-stack-2x"></span>
+				            <!-- a strong element with the custom content, in this case a number -->
+				            <strong class="fa-stack-1x"> 2 </strong>
+						</span>
+					    </div>
+				        <p class="abc blue my-auto mx-3"></p>
+				        <span><i class="fa fa-check-circle text mr-auto"></i></span>
+				    </div>
+				    <!--<h5 class="mt-1">Additional Details</h5>
+				    <form>
+				     	<div class="row">
+				            <div class="col-md-6 p-2">
+				                <input type="text" class="bg-light form-control" placeholder="Number of Student" ng-model="regTeacher.numberOfStudent" required>
+				            </div>
+				            <div class="col-md-6 p-2">
+				                <input type="text" class="bg-light form-control" placeholder="% of student Crack IIT" ng-model="regTeacher.percentIit" required>
+				            </div>    
+				            <div class="col-md-6 p-2">
+				                <input type="text" class="bg-light form-control" placeholder="% of student Scored" ng-model="regTeacher.percentScore" required>
+				            </div>
+						</div>
+				    </form>-->
+				   	<form name="regTeacherForm">
+						<h5 class="mt-1">Class Details +</h5>
+						<div class="row">
+							<!--<div class="col-md-6 p-2">
+								<input type="text" class="bg-light form-control" placeholder="Enter Board" ng-model="regTeacher.classBoard" required>
+							</div>-->
+							<div class="col-md-6 p-2">
+								<input type="text" class="bg-light form-control" placeholder="Enter Skill" ng-model="regTeacher.classSubject" required>
+							</div>
+							<div class="col-md-6 p-2">
+								<input type="text" class="bg-light form-control" placeholder="Enter Level" ng-model="regTeacher.classLevel" required>
+							</div>
+							<div class="col-md-6 p-2">
+								<input type="text" class="bg-light form-control" placeholder="Enter Duration" ng-model="regTeacher.classDuration" required>
+							</div>
+							<div class="col-md-6 p-2">
+								<input type="text" class="bg-light form-control" placeholder="Gurudakshina" ng-model="regTeacher.classFee" required>
+							</div>
+							<div class="col-md-6 p-2">
+								<select name="board" class="bg-light custom-select" ng-model="regTeacher.classMode" required>
+									<option selected disabled value="">Mode (per class/month)</option>
+									<option ng-repeat="x in regTeacherMode" value="{{x}}">{{x}}</option>
+								</select>
+							</div>  
+						</div>
+						<div class="button mt-5">
+							<button type="button" class="w-29 bg-black text-white text-center rounded-pill px-3 py-1 btn-submit" onclick="previous2()">Previous</button>
+							<button type="button" class="w-29 bg-black text-white text-center rounded-pill mx-4 px-3 py-1 float-right btn-submit" ng-click="regTeacherSubmit()"  ng-disabled="regTeacherForm.$invalid">Submit</button>
+						</div>  
+					</form>
+			    </div>
+			</div>
+		</div><!--- /row ----->
+	</div><!---- /container ---->
+
+	<!-- === /Footer === -->
+    <gk-footer></gk-footer>  
+    <!-- === /Footer === -->

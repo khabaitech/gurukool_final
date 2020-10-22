@@ -1,0 +1,81 @@
+    <!-- === /Header === -->
+    <gk-header></gk-header> 
+	<!-- === /Header === -->
+
+	<!-- === /Body   ===-->
+	<div class="container-fluid bg-light1 pb-5">
+		<div class="container pb-2">
+			<div class="card mt-2">
+				<form class="row" name="editInstituteProfileForm">
+					<div class="col-md-4">
+						<img class="card-img-top" src="assets/img/199-1997402_widescreen-columbia-university-new-york-ny.png" alt="Card image">
+					</div>
+					<div class="col-md-4 pb-1">
+						<h3 class="pt-1 px-1">Institute Name</h3>
+						<p class="text-secondary px-1">City Name</p>
+						<div class="py-2 px-1">
+							<i class="fa fa-map-marker" aria-hidden="true"></i><span class="text-secondary">  Mountain View, CA</span>
+							<div class="pl-md-4 pr-md-4 pr-2 pl-2 ">
+								<input type="text" class="form-control-sm form-control" placeholder="Mountain View, CA" ng-show="edit.profiles" ng-modal="institute.editAddress">
+							</div>
+						</div >
+						<div class="py-2 px-1">
+							<i class="fa fa-envelope" aria-hidden="true"></i><span class="text-secondary"> info@gmail.com</span> 
+							<div class="pl-md-4 pr-md-4 pr-2 pl-2 ">
+								<input type="text" class="form-control-sm form-control" placeholder="info@gmail.com" ng-show="edit.profiles" ng-modal="institute.editEmail">
+							</div>  
+						</div>
+						<div class="py-2 px-1">
+							<i class="fa fa-phone" aria-hidden="true"></i><span class="text-secondary"> +91 1234567890</span>
+							<div class="pl-md-4 pr-md-4 pr-2 pl-2 ">
+								<input type="text" class="form-control-sm form-control" placeholder="+91 1234567890" ng-show="edit.profiles" ng-modal="institute.editMobile">
+							</div>
+						</div>
+						<!--<div class="py-1 px-1">
+							<i class="fa fa-codiepie text-warning" aria-hidden="true"></i><span class="text-secondary"> 200 Institute Gurudakshina</span>
+						</div>
+						<div class="pt-1 px-1">
+							<input type="text" class="form-control-sm form-control" placeholder="200 Institute Gurudakshina" ng-show="edit.profiles" ng-modal="institute.editGD">
+						</div>-->
+					</div>
+					<div class="col-md-4 pt-1 px-1">
+						<div class="text-center">
+							<button type="button" class="btn btn-primary  m-2 px-4" ng-click="edit.profiles = !edit.profiles" ng-show="!edit.profiles">Edit <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+							<button type="button" class="btn btn-primary  m-2 px-4" ng-show="edit.profiles" ng-click="saveInstituteProfile()">Save <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+							<button type="button" class="btn btn-primary  m-2 px-3" ng-click="logOut()">Log out</button> 
+						</div>
+					</div>
+				</form>
+			</div>
+		
+			<div class="row mt-4">
+			<div class="col-md-12">
+				<form class="card my-3" name="editInstituteAboutForm">
+					<div class="card-header">
+						<span class="h4">About Institute</span>
+						<button type="button" class="btn btn-primary  mx-2 px-4 float-right" ng-click="edit.profilesAbout = !edit.profilesAbout" ng-show="!edit.profilesAbout">Add <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+						<button type="button" class="btn btn-primary  mx-2 px-4 float-right" ng-click="saveInstituteAbout()" ng-show="edit.profilesAbout">Save <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+					</div>
+					<div class="card-body text-secondary">
+						<div>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+						</div>
+						<div class=" form-group pt-2 border-top" ng-show="edit.profilesAbout">
+							<label for="" class="float-left pl-2"><u>About Institute</u></label>
+							<textarea class="form-control" ng-model="institute.editAbout"  rows="10" name="about" placeholder="
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.">
+							</textarea>
+						</div>
+					</div> 
+				</form>
+			</div>
+			</div>
+		</div>
+	</div>
+	<!-- === /Body   ===-->
+	
+	<!-- === /Footer === -->
+    <gk-footer></gk-footer>  
+    <!-- === /Footer === -->
+    
+                

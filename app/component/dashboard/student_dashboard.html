@@ -1,0 +1,208 @@
+
+
+<!-- === /Header === -->
+<gk-header></gk-header> 
+<!-- === /Header === -->
+
+<!-- === /Body    === -->
+<div class="container-fluid bg-light1">
+    <div class="container">
+        <div class="card mt-2">
+            <form class="row" name="editStudentProfileForm">
+                <div class="col-md-4">
+                    <img class="card-img-top" src="assets/img/indian-students.png" alt="Card image">
+                </div>
+                <div class="col-md-4 pb-1">
+                    <h3 class="pt-1 px-1">Student Name</h3>
+                    <p class="text-secondary px-1">Intermediate</p>
+                    <div class="py-2 px-1">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i><span class="text-secondary">  Mountain View, CA</span>
+                        <div class="pl-md-4 pr-md-4 pr-2 pl-2 ">
+                            <input type="text" class="form-control-sm form-control" placeholder="Mountain View, CA" ng-show="edit.profiles" ng-modal="institute.editAddress">
+                        </div>
+                    </div >
+                    <div class="py-2 px-1">
+                        <i class="fa fa-envelope" aria-hidden="true"></i><span class="text-secondary"> info@gmail.com</span> 
+                        <div class="pl-md-4 pr-md-4 pr-2 pl-2 ">
+                            <input type="text" class="form-control-sm form-control" placeholder="info@gmail.com" ng-show="edit.profiles" ng-modal="institute.editEmail">
+                        </div>  
+                    </div>
+                    <div class="py-2 px-1">
+                        <i class="fa fa-phone" aria-hidden="true"></i><span class="text-secondary"> +91 1234567890</span>
+                        <div class="pl-md-4 pr-md-4 pr-2 pl-2 ">
+                            <input type="text" class="form-control-sm form-control" placeholder="+91 1234567890" ng-show="edit.profiles" ng-modal="institute.editMobile">
+                        </div>
+                    </div>
+                    <div class="py-1 px-1">
+                        <i class="fa fa-codiepie text-warning" aria-hidden="true"></i><span class="text-secondary"> 200 Institute Gurudakshina</span>
+                        <div class="pl-md-4 pr-md-4 pr-2 pl-2 ">
+                            <input type="text" class="form-control-sm form-control" placeholder="200 " ng-show="edit.profiles" ng-modal="institute.editGD">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 pt-1 text-center">
+                    <button type="button" class="btn btn-primary  m-2 px-4" ng-click="edit.profiles = !edit.profiles" ng-show="!edit.profiles">Edit <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-primary  m-2 px-4" ng-show="edit.profiles" ng-click="saveStudentProfile()">Save <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-primary  m-2 px-3" ng-click="logOut()">Log out</button> 
+                </div>
+            </form>
+        </div>
+        <div class="row mt-4">
+            <!--=== /Mobile View ===-->
+            <div class="col-md-4 d-block d-md-none">
+                <div class="card my-3">
+                    <div class="row px-3">
+                        <div class="col-md-4 bg-warning text-white text-center pt-3" ng-click="showDetailsBox1 = !showDetailsBox1">
+                            <i class="fa fa-book fa-2x"></i>
+                        </div>
+                        <div class="col-md-8 col-sm-6" ng-show="showDetailsBox1">
+                            <h3>126</h3>
+                            <p>Total Classes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-3">
+                    <div class="row px-3">
+                        <div class="col-md-4 bg-success text-white text-center pt-3" ng-click="showDetailsBox2 = !showDetailsBox2">
+                            <i class="fa fa-book fa-2x"></i>
+                        </div>
+                        <div class="col-md-8 col-sm-6" ng-show="showDetailsBox2">
+                            <h3>JavaScript</h3>
+                            <p>Next Class</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-3">
+                    <div class="row px-3">
+                        <div class="col-md-4 bg-danger text-white text-center pt-3" ng-click="showDetailsBox3 = !showDetailsBox3">
+                            <i class="fa fa-book fa-2x"></i>
+                        </div>
+                        <div class="col-md-8 col-sm-6" ng-show="showDetailsBox3">
+                            <h3>11,260</h3>
+                            <p>Total Lecture Hour</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-3">
+                    <div class="row px-3">
+                        <div class="col-md-4 bg-info text-white text-center pt-3" ng-click="showDetailsBox4 = !showDetailsBox4">
+                            <i class="fa fa-book fa-2x"></i>
+                        </div>
+                        <div class="col-md-8 col-sm-6" ng-show="showDetailsBox4">
+                            <h3>1,260</h3>
+                            <p>Active Student Count</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=== /Mobile View ===-->
+            <div class="col-md-8">
+                <form class="card my-3" name="editStudentPortfolioForm">
+                    <div class="card-header">
+                        <span class="h4">Portfollio</span>
+                        <button type="button" class="btn btn-primary px-3 float-right" ng-click="edit.profilePortfolio = !edit.profilePortfolio" ng-show="!edit.profilePortfolio">Edit <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-primary px-3 float-right" ng-click="studentSavePortfolio()" ng-show="edit.profilePortfolio">Save <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="card-body text-secondary">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+                    </div> 
+                    <div class="border-top p-2" ng-show="edit.profilePortfolio">
+                        <span class="text-dark pl-1"><u class="mb-1">Edit</u></span>
+                        <textarea class="form-control pt-2" ng-model="teacher.editPortfolio" name="editPortfolio" rows="10"  placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.">
+
+                        </textarea>
+                    </div>    
+                </form>
+                <form class="card my-3" name="editStudentSubjectForm">
+                    <div class="card-header">
+                        <span class="h4">Subject</span>
+                        <button type="button" class="btn btn-primary  mx-2 px-4 float-right" ng-click="edit.profileAddSubject = !edit.profileAddSubject" ng-show="!edit.profileAddSubject">Add <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-primary  mx-2 px-3 float-right" ng-click="studentAddSubject()" ng-show="edit.profileAddSubject">Save <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-secondary">
+                            <span ng-repeat="x in studentSubject">{{x}}<br></span>
+                        </p>
+                    </div> 
+                    <div class="form-group pl-2 pr-2 border-top" ng-show="edit.profileAddSubject">
+                        <label class="float-left text-secondary"><u>Add Subject</u></label>
+                        <input type="text" name="addSubject" class="form-control" ng-model="teacher.addSubject" placeholder="Add Subject">
+                    </div>
+                </form>
+                <form class="card my-3" name="editStudentInstitutionForm">
+                    <div class="card-header">
+                        <span class="h4">Institution Association</span>
+                        <button type="button" class="btn btn-primary  mx-2 px-4 float-right" ng-click="edit.profileAddInstitution = !edit.profileAddInstitution" ng-show="!edit.profileAddInstitution">Add <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-primary  mx-2 px-4 float-right" ng-click="studentAddInstitution()" ng-show="edit.profileAddInstitution">Save <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="card-body text-secondary">
+                        <p ng-repeat="x in institutionAssociation">{{x.college}}<br>{{x.subject}}</p>
+                    </div> 
+                    <div class="card-body text-secondary border-top " ng-show="edit.profileAddInstitution">
+                        <p><u>Add Institution</u></p>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="addinstitutionDegree" ng-model="teacher.addInstitutionDegree" placeholder="Degree">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="addinstitutionUnviersity" ng-model="teacher.addInstitutionUniversity" placeholder="Passout University">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--=== /Suytem View ===-->
+            <div class="col-md-4 d-none d-md-block">
+                <div class="card my-3">
+                <div class="row px-3">
+                    <div class="col-md-4 bg-warning text-white text-center pt-3">
+                    <i class="fa fa-book fa-2x"></i>
+                    </div>
+                    <div class="col-md-8 col-sm-6">
+                    <h3>126</h3>
+                    <p>Total Classes</p>
+                    </div>
+                </div>
+                </div>
+                <div class="card my-3">
+                <div class="row px-3">
+                    <div class="col-md-4 bg-success text-white text-center pt-3">
+                    <i class="fa fa-book fa-2x"></i>
+                    </div>
+                    <div class="col-md-8 col-sm-6">
+                    <h3>JavaScript</h3>
+                    <p>Next Class</p>
+                    </div>
+                </div>
+                </div>
+                <div class="card my-3">
+                <div class="row px-3">
+                    <div class="col-md-4 bg-danger text-white text-center pt-3">
+                    <i class="fa fa-book fa-2x"></i>
+                    </div>
+                    <div class="col-md-8 col-sm-6">
+                    <h3>11,260</h3>
+                    <p>Total Lecture Hour</p>
+                    </div>
+                </div>
+                </div>
+                <div class="card my-3">
+                <div class="row px-3">
+                    <div class="col-md-4 bg-info text-white text-center pt-3">
+                    <i class="fa fa-book fa-2x"></i>
+                    </div>
+                    <div class="col-md-8 col-sm-6">
+                    <h3>1,260</h3>
+                    <p>Active Student Count</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!--=== /System View ===-->
+        </div>
+    </div>
+</div>
+<!-- === /Body    === -->
+
+
+ <!-- === /Footer === -->
+ <gk-footer></gk-footer>  
+ <!-- === /Footer === -->

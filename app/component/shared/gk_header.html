@@ -1,0 +1,603 @@
+ <!-- ======= Top Bar ======= -->
+ <section id="topbar" class="d-none d-lg-block">
+    <div class="container d-flex">
+      <div class="contact-info mr-auto">
+        <span class="font-weight-bold text-white">Have any questions? <a href="#">+91 1234567890</a></span>
+      </div>
+      <div class="ab"></div>
+      <div class="xyz social-links row">
+        <div ng-if="!accountLoggedIn"><a  data-toggle="modal" data-target="#signinmodel">Login</a> / <a class="signup"  data-toggle="modal" data-target="#signupmodel">Signup</a></div>
+        <div class="dropdown" ng-if="accountLoggedIn">
+          <a class="btn pt-2 pr-2 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Account 
+          </a> 
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <div>
+              <a class="dropdown-item py-3 text-dark" href="#/teacherDashProfile">Teacher Profile</a>
+            </div>
+             <div>
+              <a class="dropdown-item py-3 text-dark" href="#/studentDashProfile">Student Profile</a>
+             </div>
+             <div>
+              <a class="dropdown-item py-3 text-dark" href="#/instituteDashProfile">Institute Profile</a>
+             </div>
+             <div>
+              <a class="dropdown-item py-3 text-dark" href="#/teacherRegistration">Teacher Registration</a>
+             </div>
+             <div>
+              <a class="dropdown-item py-3 text-dark" href="#/studentRegistration">Student Registration</a>
+             </div>
+             <div>
+              <a class="dropdown-item py-3 text-dark" href="#/instituteRegistration">Institute Registration</a>
+             </div>
+             <div>
+              <a class="dropdown-item py-3 text-dark" href="#/teacherRegistration2">Teacher Registration</a>
+             </div>
+             <div>
+              <a class="dropdown-item py-3 text-dark" href="#/studentRegistration2">Student Registration</a>
+             </div>
+             <div>
+              <a class="dropdown-item py-3 text-dark" href="#/instituteRegistration2">Institute Registration</a>
+             </div>
+          </div>
+        </div> 
+        <a href="#" class="ml-5 twitter"><i class="icofont-twitter"></i></a>
+        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="#" class="skype"><i class="icofont-skype"></i></a>
+        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
+      </div>
+    </div><!-- /container -->
+ </section>
+<!-- ======= /Top Bar ======= -->
+
+  <!-- ======= Header ======= -->
+  <header>
+    <nav class="container navbar navbar-expand-lg navbar-light bg-white pr-4">
+      <a class="navbar-brand" href="#"><img src="assets/img/logo.png" height="60px" width="220px"></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        
+        <form class="navbar-form navbar-left  col-md-4 col-lg-5 col-sm-12" name="searchForm">
+          <div class="input-group border">
+            <input type="text" class="form-control border-0" placeholder="Search for Skills,Teachers" name="search">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </div>
+          <div class="searchOutput   col-md-4 col-lg-5 col-sm-12">
+            <div class="">
+              <!--hello-->
+            </div>
+          </div>
+        </form>
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" ng-click="scrollAbout('gkAbout')">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  data-toggle="modal" data-target="#exampleModalCenter">Request Teacher</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  data-toggle="modal" data-target="#requeststudent">Request Students</a>
+          </li>
+          <!--<li class="nav-item">
+            <a class="nav-link"  data-toggle="modal" data-target="#searchsubject"><span class="fa fa-search"></span></a>
+          </li>-->
+          <li class="row nav-item justify-content-between">
+                 <!--login sign up mobile-->
+               <div class="pl-3 d-block d-md-none nav-link" ng-if="!accountLoggedIn"><a  data-toggle="modal" data-target="#signinmodel">Login</a> / <a class="signup"  data-toggle="modal" data-target="#signupmodel">Signup</a></div>
+               <div  class="dropdown d-block d-md-none nav-link" ng-if="accountLoggedIn">
+                 <a class="btn pt-2 pr-2 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Account 
+                 </a> 
+                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                   <div>
+                     <a class="dropdown-item py-3 text-dark" href="#/teacherDashProfile">Teacher Profile</a>
+                   </div>
+                    <div>
+                     <a class="dropdown-item py-3 text-dark" href="#/studentDashProfile">Student Profile</a>
+                    </div>
+                    <div>
+                     <a class="dropdown-item py-3 text-dark" href="#/instituteDashProfile">Institute Profile</a>
+                    </div>
+                    <div>
+                     <a class="dropdown-item py-3 text-dark" href="#/teacherRegistration">Teacher Registration</a>
+                    </div>
+                    <div>
+                     <a class="dropdown-item py-3 text-dark" href="#/studentRegistration">Student Registration</a>
+                    </div>
+                    <div>
+                     <a class="dropdown-item py-3 text-dark" href="#/instituteRegistration">Institute Registration</a>
+                    </div>
+                    <div>
+                     <a class="dropdown-item py-3 text-dark" href="#/teacherRegistration2">Teacher Registration</a>
+                    </div>
+                    <div>
+                     <a class="dropdown-item py-3 text-dark" href="#/studentRegistration2">Student Registration</a>
+                    </div>
+                    <div>
+                     <a class="dropdown-item py-3 text-dark" href="#/instituteRegistration2">Institute Registration</a>
+                    </div>
+                 </div>
+               </div>
+               <!--login sign- up mobile-->
+               <div class="mt-2 ml-2">
+                <a class="" data-toggle="modal" data-target="#faqmodel"><img class="pl-2" src="assets/img/faq-icon.jpg" alt="" height="40px" width="50px"></a>
+              </div>
+          </li>
+        </ul>
+      </div>
+    </nav><!-- /nav -->
+  </header>
+  <!-- ======= /Header ======= -->
+
+
+
+
+
+
+
+
+
+
+  <!---Modal request for teacher--->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header head1">
+          <h2 class="modal-title text-white py-1" id="exampleModalLongTitle">Request Teacher</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid "><br>
+            <div class="col-lg-12 m-auto d-block">
+              <form name="registerTeacherForm">
+                <div class="form-group">
+                  <input type="text" name="user" class="form-control" id="teacherFname" placeholder=" Enter Full Name" ng-model="teacher.fname" autocomplete="off" required>
+                  <span id="stuname" class="text-danger font-weight-bold"></span>
+                </div>
+                <div class="form-group">
+                  <input type="number" name="user" class="form-control" id="teacherNumber"placeholder=" Enter Phone Number" ng-model="teacher.phone" autocomplete="off" required>
+                  <span id="number1" class="text-danger font-weight-bold"> </span>
+                </div>
+                <div class="form-group">
+                  <input type="text" name="email" class="form-control" id="teacherEmail" placeholder=" Enter Gmail Id" ng-model="teacher.email" autocomplete="off" required>
+                  <span id="emailid" class="text-danger font-weight-bold"> </span>
+                </div>
+                <!--<div class="form-group">
+                  <select class="form-control" id="teacherBoard" ng-model="teacher.board" ng-change="teacherBoardSelect()" required>
+                    <option selected disabled value="">Choose Board</option>
+                    <option ng-repeat="b in boardDetail" value="{{b}}">{{b}}</option>
+                  </select>
+                  <span id="board1" class="text-danger font-weight-bold"> </span>
+                </div>-->
+                <div class="form-group">
+                  <select class="form-control" id="teacherClass" placeholder="Choose Class" ng-model="teacher.class" ng-change="teacherClassSelect()" required>
+                    <option selected disabled value="">Choose Level</option>
+                    <option ng-repeat="c in classDetail" value="{{c}}">{{c}}</option>
+                  </select>
+                  <span id="class1" class="text-danger font-weight-bold"> </span>
+                </div>
+                <div class="form-group">
+                  <select class="form-control" id="subject" placeholder="Choose  Subject" ng-model="teacher.subject" ng-change="teacherSubjectSelect()" required>
+                    <option selected disabled value="">Choose Skill</option>
+                    <option ng-repeat="s in subjectDetail" value="{{s}}">{{s}}</option>
+                  </select>
+                  <span id="subject1" class="text-danger font-weight-bold"> </span>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" rows="2" id="teacherTextarea" placeholder=" Describe Your Request" ng-model="teacher.describe" required></textarea>
+                  <span id="Textarea1" class="text-danger font-weight-bold"></span>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-primary" type="button" ng-click="teacherSubmit()"  ng-disabled="registerTeacherForm.$invalid">Submit Now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--- /Modal request for teacher --->
+
+  <!---Modal request for student--->
+  <div class="modal fade" id="requeststudent" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header head1">
+          <h2 class="modal-title text-white py-1" id="exampleModalLongTitle">Request Students</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">  
+          <div class="container-fluid "><br>  
+            <div class="col-lg-12 m-auto d-block">  
+              <form action="#" name="registerStudentForm">
+                <div class="form-group">
+                  <input type="text" name="user" class="form-control" id="studentFname" placeholder="Enter Full Name" autocomplete="off" ng-model="student.fname" required>
+                  <span id="stuname" class="text-danger font-weight-bold"> </span>
+                </div>
+                <div class="form-group">
+                  <input type="number" name="user" class="form-control" id="studentNumber"placeholder=" Enter Phone Number" autocomplete="off" ng-model="student.phone" required>
+                  <span id="number1" class="text-danger font-weight-bold"> </span>
+                </div>
+                <div class="form-group">
+                  <input type="text" name="email" class="form-control" id="studentEmail" placeholder="Enter Gmail Id" autocomplete="off" ng-model="student.email" required>
+                  <span id="emailid" class="text-danger font-weight-bold"> </span>
+                </div>
+                <!--<div class="form-group">
+                  <select class="form-control" id="studentBoard" placeholder="Choose Board" ng-model="student.board" ng-change="studentBoardSelect()" required>
+                    <option disabled selected value="">Choose Board</option>
+                    <option ng-repeat="b in boardDetail" value="{{b}}">{{b}}</option>
+                  </select>
+                  <span id="board1" class="text-danger font-weight-bold"> </span>
+                </div>-->
+                <div class="form-group">
+                  <select class="form-control" id="studentClass" placeholder="Choose Class" ng-model="student.class" ng-change="studentClassSelect()" required>
+                    <option disabled selected value="">Choose Level</option>
+                    <option ng-repeat="c in classDetail" value="{{c}}">{{c}}</option>
+                  </select>
+                  <span id="class1" class="text-danger font-weight-bold"> </span>
+                </div>
+                <div class="form-group">
+                  <select class="form-control" id="studentSubject" placeholder="Choose Subject" ng-model="student.subject" ng-change="studentSubjectSelect()" required>
+                    <option selected disabled value="">Choose Skill</option>
+                    <option ng-repeat="s in subjectDetail" value="{{s}}">{{s}}</option>
+                  </select>
+                  <span id="subject1" class="text-danger font-weight-bold"> </span>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" id="studentTextarea" placeholder="Describe Your Request" ng-model="student.describe" required></textarea>
+                  <span id="Textarea1" class="text-danger font-weight-bold"> </span>
+                </div>
+                <div class="form-group">
+                  <button class="btnSubmit" type="button" ng-click="studentSubmit()"  ng-disabled="registerStudentForm.$invalid">Submit Now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--- /Modal request for student--->
+
+  <!---Modal search Subject--->
+  <div class="modal fade" id="searchsubject" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header head1">
+          <h2 class="modal-title text-white py-1" id="exampleModalLongTitle">Search for Subject</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid "><br>
+            <div class="col-lg-12 m-auto d-block">      
+              <form action="#" name="searchForm">
+                <div class="form-group">
+                  <!--<select class="form-control" id="searchBoard" placeholder="Choose Board" ng-model="search.board" ng-change="searchBoardSelect()" required>
+                    <option disabled selected value="">Choose Board</option>
+                    <option ng-repeat="b in boardDetail" value="{{b}}">{{b}}</option>
+                  </select>-->
+                  <span id="board1" class="text-danger font-weight-bold"> </span>
+                </div>
+                <div class="form-group">
+                  <select class="form-control" id="searchClass" placeholder="Choose Class" ng-model="search.class" ng-change="searchClassSelect()" required>
+                    <option selected disabled value="">Choose Level</option>
+                    <option ng-repeat="c in classDetail" value="{{c}}">{{c}}</option>
+                  </select>
+                  <span id="class1" class="text-danger font-weight-bold"> </span>
+                </div>
+                <div class="form-group">
+                  <!--<select class="form-control" id="searchSub" placeholder="Choose Subject Group" ng-model="search.subjectGroup" ng-change="searchSubjectGroupSelect()" required>
+                    <option disabled selected value="">Choose Subject Group</option>
+                    <option ng-repeat="sg in subjectGroupDetail" value="{{sg}}">{{sg}}</option>
+                  </select>-->
+                  <span id="subject2" class="text-danger font-weight-bold"> </span>
+                </div>
+                <div class="form-group">
+                  <select class="form-control" id="searchSubject" placeholder="Choose Subject" ng-model="search.subject" ng-change="searchSubjectSelect()" required>
+                    <option disabled selected value="">Choose Skill</option>
+                    <option ng-repeat="s in subjectDetail" value="{{s}}">{{s}}</option>
+                  </select>
+                  <span id="subject1" class="text-danger font-weight-bold"> </span>
+                </div>
+                <div class="form-group">
+                  <button class="btnSubmit" type="button" ng-click="searchSubmit()"  ng-disabled="searchForm.$invalid">Submit Now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--- /Modal search Subject--->
+  
+  
+  <!---  New Sign in Modal----->
+  
+	<div class="modal fade" id="signinmodel" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+		  <div class="modal-content">
+		  	<div class="row">
+          <div class="pt-3 col-lg-12 text-right d-block d-md-none pr-5" >
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" style="font-size:40px">&times;</span>
+            </button>
+          </div>
+		  		<div class="col-md-6 col-sm-12 text-center mt-0 mt-md-5 mb-5" style="padding:0px">
+		      	<form class="mx-5 sign-in" name="signInForm">
+		  		    <h3 class="mb-3">Sign In Mygurukool</h3>
+							<div class="form-group mt-4">
+							 	<input type="email" class="form-control" placeholder="Gmail Id / Mobile Number *" ng-model="sign.email" required>
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" placeholder="Enter Password *" ng-model="sign.password" required>
+							</div>
+              <div class="form-group">
+                <a href="#" class="ForgetPwd1 float-right py-3" data-toggle="modal" data-target="#forgot-model" class="close" data-dismiss="modal">Forgot Password?</a>
+              </div>
+							<button type="button" class="btn btn-primary px-4 mt-2" ng-click="signInSubmit()" data-dismiss="modal"  ng-disabled="signInForm.$invalid">Sign In</button>
+						</form>
+	  			</div>
+	  			<div class="col-md-6 bg-prime d-none d-md-block text-center auth-overlay">
+    				<div class="sign-in-overlay">
+	  					<div class="modal-header " style="border:0px;">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  			  <span aria-hidden="true" style="font-size:40px">&times;</span>
+								</button>
+			  			</div>
+			  			<div class="login-content ">
+  			  			<h3 class="text-white">Welcome</h3>
+  							<h5 class="text-white">Enter the Login Details and Start Journery</h5>
+  							<button type="button" class="btn btn-dange px-4" data-toggle="modal" data-target="#sign-up-model" class="close" data-dismiss="modal">Sign Up</button>
+			  		  </div>
+			  	  </div>
+	  			</div>
+		  	</div>		  
+		  </div>
+	  </div>
+	</div>
+  <!--- sign in Modal ----->
+
+  <!---  Create Account Modal ----->
+  
+
+	<div class="modal fade" id="signupmodel" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+		  <div class="modal-content">
+		  	<div class="row">
+		 			<div class="col-md-6 d-none d-md-block bg-prime text-center auth-overlay">
+		 				<div class="sign-up-overlay">
+		  				<div class="login-content mt-5">
+		   					<h3 class="text-white">Welcome</h3>
+                <h5 class="text-white">To keep connected with us please login</h5>
+								<button type="button" class="btn btn-dange px-4 mt-2" data-toggle="modal" data-target="#sign-in-model" class="close" data-dismiss="modal">Sign In</button>
+			  			</div>
+		  			</div>
+	  			</div>
+          <div class="col-md-6 text-center mb-5" style="padding:0px">
+            <form class="mx-5 sign-up" name="signUpForm">
+              <div class="modal-header " style="border:0px;">
+                <button type="button" class="close float-right" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true" style="font-size:30px">&times;</span>
+                </button>
+              </div>
+              <h3 class="mb-3">Create Account</h3>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Enter email" name="signUpEmail" ng-model="signup.email" required>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="Enter Gmail Id" name="signUpPassword" ng-model="signup.password" required>
+              </div>
+              <div class="form-group">
+                <input type="number" class="form-control"  placeholder="Mobile Number" name="num" ng-model="signup.phone" required>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password" name="pswd" ng-model="signup.password" required>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control"  placeholder="Confirm Password" name="pswds" ng-change="confirmPasswordChange()" ng-model="signup.confirmPassword" required>
+              </div>
+              <div class="form-group">
+                <label class="font-weight-bold"></label>
+                <input type="radio" name="members" value="student" id="youStudent"> Student
+                <input type="radio" name="members" value="teacher" id="youTeacher"> Teacher
+                <input type="radio" name="members" value="institute" id="youInstitute"> Institute
+                <span id="teach" class="text-danger font-weight-bold"></span>
+              </div>
+              <button type="button" class="btn btn-primary px-4" ng-click="signUpSubmit()"  ng-disabled="signUpForm.$invalid">Submit</button>
+            </form>
+          </div>
+      	</div>
+			</div>
+	  </div>
+	</div>
+  <!---  Create Account Modal ----->
+
+  <!---Forgot Password Modal --->
+  <div class="modal fade" id="forgot-model" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="row">
+          <div class="pt-3 col-lg-12 text-right d-block d-md-none pr-5" >
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" style="font-size:40px">&times;</span>
+            </button>
+          </div>
+          <div class="col-md-6  pb-5 col-sm-12 text-center mt-0 mt-md-5 mb-5" style="padding:0px">
+            <form class="mx-5 sign-in" name="forgetForm">
+              <h3 class="mb-3">Reset Your Password</h3>
+              <div class="form-group mt-4">
+                <input type="email" class="form-control" id="forgetEmail" placeholder="Gmail Id / Mobile Number" name="forgetEmail" ng-model="forget.email" required>
+              </div>
+              <div class="form-group">
+                  <input type="password" class="form-control" id="newPassword" placeholder="Enter New Password" name="forgetNewPassword" ng-model="forget.password" required>
+              </div>
+              <div class="form-group mt-4">
+                <input type="password" class="form-control" id="confirmNewPassword" placeholder="Enter Confirm Password" name="forgetNewConfirmPassword" ng-model="forget.confirmPassword" required>
+              </div>
+              <div class="f14 justify-content-around">
+                <a >Already Have Account ?</a><a data-toggle="modal" data-target="#signinmodel" class="close mt-1" data-dismiss="modal">Sign In</a>
+              </div>
+              <div class="">
+                <button type="button" class="btn btn-primary px-4 mt-2" ng-click="forgetPasswordSubmit()" ng-disabled="forgetForm.$invalid">Reset Password</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6 bg-prime d-none d-md-block text-center  auth-overlay">
+            <div class="sign-in-overlay">
+              <div class="modal-header " style="border:0px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true" style="font-size:40px">&times;</span>
+                </button>
+              </div>
+              <div class="login-content">
+                <h3 class="text-white">Welcome</h3>
+                <h5 class="text-white">Enter the Login Details and Start Journery</h5>
+                <button type="button" class="btn btn-dange px-4" data-toggle="modal" data-target="#sign-in-model" class="close" data-dismiss="modal">Sign In</button>
+              </div>
+            </div>
+          </div>
+        </div>      
+      </div>
+    </div>
+  </div>
+  <!--Forgot Password Modal -->
+  
+  <!-- Get in Touch Modal --->
+
+  <div class="modal fade" id="get_in_touch" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container get_contain">
+            <div class="col-lg-12 m-auto d-block">
+              <form class="px-5" name="getInTouchForm">
+                <h3 class="text text-center font-weight-bold mt-4">Get In Touch</h3>
+                  <div class="form-group mt-4">
+                    <input type="text" class="form-control px-5" id="touchName" name="touchName" placeholder="Enter Name" ng-model="touch.namee" required>
+                    <!--placing icon using a span element-->
+                    <span class="icon fa fa-user-circle-o fa-lg"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <input type="email" class="form-control px-5" id="touchEmail" name="touchEmail" placeholder="Enter Email" ng-model="touch.email" required>
+                    <span class="icon fa fa-envelope fa-lg"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <input type="text" class="form-control px-5" id="touchPhone" name="touchPhone" placeholder="Enter Phone" ng-model="touch.phone" required>
+                    <span class="icon fa fa-phone fa-lg"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <textarea rows="5" cols="15" id="msg" name="msg" class="form-control px-5" placeholder="Message" ng-model="touch.message" required></textarea>
+                    <span class="icon-textarea fa fa-envelope fa-lg"></span>
+                  </div>
+
+                  <div class="col-sm-12 text-center form-group">
+                    <button type="button" class="btnSubmit text-white text-center px-4" ng-click="touchInSubmit()" ng-disabled="getInTouchForm.$invalid">Send Now</button>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Get in touch modal --->
+
+  <!-- faq model --->
+ 
+  <div class="modal fade" id="faqmodel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLongTitle">FAQ</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid mb-5">
+            <div class="row">
+              <div class="col-lg-5 col-md-6 col-sm-12 mt-5">
+                <img src="assets/img/faq.png" class="img-responsive img-fluid">
+              </div>
+              <div class="col-lg-7 col-md-6 col-sm-12 my-4">
+                <div id="accordion">
+                  <div class="card">
+                    <div class="card-header">
+                      <a class="card-link" data-toggle="collapse" data-target="#collapseOne">
+                        <i class="fa fa-minus"></i>
+                        What is Gurukool?
+                      </a>
+                    </div>
+                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                      <div class="card-body">
+                        Gurukool is a virtual alternative to traditional home or coaching classes based "tuiring".TutorReal Guru, on Online Tutoring provider replicates traditional face to face coaching with live Online and interactive tutoring incorporating state of the art virtual methods of teaching namely- interactive whiteboards,live video chats, interaction, and sharing of teaching and learning tools and resources.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <a class="collapsed card-link" data-toggle="collapse" data-target="#collapseTwo">
+                        What is Gurukool?
+                        <i class="fa fa-plus"></i>
+                      </a>
+                    </div>
+                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                      <div class="card-body">
+                       Gurukool is a virtual alternative to traditional home or coaching classes based "tuiring".TutorReal Guru, on Online Tutoring provider replicates traditional face to face coaching with live Online and interactive tutoring incorporating state of the art virtual methods of teaching namely- interactive whiteboards,live video chats, interaction, and sharing of teaching and learning tools and resources.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <a class="collapsed card-link" data-toggle="collapse" data-target="#collapseThree">
+                        What is Gurukool?
+                        <i class="fa fa-plus"></i>
+                      </a>
+                    </div>
+                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                      <div class="card-body">
+                       Gurukool is a virtual alternative to traditional home or coaching classes based "tuiring".TutorReal Guru, on Online Tutoring provider replicates traditional face to face coaching with live Online and interactive tutoring incorporating state of the art virtual methods of teaching namely- interactive whiteboards,live video chats, interaction, and sharing of teaching and learning tools and resources.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12 pt-5 text-right">
+                  <a href="#/faq" class="text-dark"><u>More</u></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--- faq model --->

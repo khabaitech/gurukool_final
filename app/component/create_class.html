@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- html -->
+<html lang="en">
+  <head>
+    <!-- Title Tag -->
+    <title>Gurukool | Create Class</title>
+    <!-- /Title Tag -->
+    <!-- Meta Tag -->
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- /Meta Tag -->
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- /Favicons -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Muli:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- /Google Fonts -->
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- /Vendor CSS Files -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- /Font Awesome -->
+    <!-- Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Main CSS File -->
+</head>
+<style type="text/css">
+	.blue{
+		background: #7A8FF7 ;
+	}
+	.text{
+		color: #7A8FF7 ;
+	}
+	.request{
+		width: 90%;
+		margin: auto;
+	}
+	
+	button{
+		justify-content: center;
+	}
+	.request-height{
+		height: 100vh;
+	}
+	.img-responsive{
+		margin-left: 25%;
+		margin-top: 40%;
+	}
+	@media only screen and (max-width: 600px) { 
+      .request-height{
+      	display: none;
+      }
+    }
+    @media only screen and (min-width: 600px) and (max-width: 991px) {
+      .request-height{
+      	display: none;
+      }
+    }
+    @media only screen and (max-width: 1024px){
+       .request-height{
+      	display: none;
+      }
+    }
+</style>
+<body>
+	<div class="container font">
+		<div class="row">
+			<div class="col-lg-6 col-md-12 mx-auto">
+				<h3 class="text my-4 text-center mt-5">Create a Class</h3>
+				<input class="mb-4 px-2 py-2 request form-control" type="text" placeholder="Class">
+				<input class="mb-4 px-2 py-2 request form-control" type="text" placeholder="Subject">
+				<input class="mb-4 px-2 py-2 request form-control" type="text" placeholder="Board">
+				<input class="mb-4 px-2 py-2 request form-control" type="text" placeholder="Time">
+				<input class="mb-4 px-2 py-2 request form-control" type="text" placeholder="Day of week">
+				<select class="mb-4 px-2 py-2 request form-control">
+					<option>Recurring and non-recurring</option>
+					<option>Recurring</option>
+					<option>Recurring</option>
+					<option>Recurring</option>
+				</select>
+				<input class="mb-4 px-2 py-2 request form-control" type="text" placeholder="Frequency-Repeat each week/month/year"><br>
+				<button type="button" class="rounded-pill blue text-white py-2 px-5 mb-3 ml-5">Create Class</button><br>
+			</div>
+			<div class="col-md-6 blue request-height"><img src="assets/img/class.png" class="img-responsive"></div>
+		</div>
+	</div>
+</body>
+</html>

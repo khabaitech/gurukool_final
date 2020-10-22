@@ -1,0 +1,201 @@
+	
+	<!-- === /Header === -->
+    <gk-header></gk-header> 
+	<!-- === /Header === -->
+	
+
+
+	<div class="container p-2 bg-light">
+		<div class="row justify-content-center">
+			
+			<!----First part of Registeration Form------->
+
+			<div class="col-lg-9 col-md-12  bg-whit" id="step1">
+				<div class="registration-form p-4">
+				<h2 class="h1 text-center text py-3">Registration Form</h2>
+				
+				<h5>Personal Details</h5>
+				<form>
+  				 	<div class="row">
+  						<div class="col-md-6 p-2">
+   						   <input type="text" class="bg-light form-control" placeholder="Enter Name">
+   						</div>
+   						<div class="col-md-6 p-2">
+   							<input type="text" class="bg-light form-control" placeholder="Enter Preferred Username">
+   						</div>
+   						<div class="col-md-6 p-2">
+   							<input type="password" class="bg-light form-control" placeholder="Enter password">
+   						</div>
+   						<div class="col-md-6 p-2">
+   							<input type="date" class="bg-light form-control" placeholder="Date of Birth">
+   						</div>
+   						<div class="col-md-6 p-2">
+   							<input type="text" class="bg-light form-control" placeholder="Gender">
+   						</div>
+   						<div class="col-md-6 p-2">
+   							<input type="number" class="bg-light form-control" placeholder="Mobile Number">
+   						</div>
+   						<div class="col-md-6 p-2">
+   							<input type="email" class="bg-light form-control" placeholder="Enter Gmail Id">
+   						</div>
+   						<div class="col-md-6 p-2">
+   							<input type="email" class="bg-light form-control" placeholder="Alternate Email Id">
+   						</div>
+   						<div class="col-md-6 m-2">
+   						  	<div class="row">
+   							   <input type="file" class="col-md-7 bg-light form-control" placeholder="Upload Image">
+   							   <button type="button" class=" col-md-5 text-white btn-sm blue font-weight-bold">Choose File</button>
+   							</div>
+   						</div>
+   				  	</div>
+   				</form>
+				<h5>Location Details</h5>
+				<form>
+  					<div class="row">
+  						<!--<div class="col-md-6 p-2">
+   							<input type="text" class="bg-light form-control" placeholder="Address">
+   						</div>-->
+   						<div class="col-md-6 p-2">
+   							<input type="text" class="bg-light form-control" placeholder="City">
+   						</div>
+   						<!--<div class="col-md-6 p-2">
+   							<input type="text" class="bg-light form-control" placeholder="State">
+   						</div>-->
+   						<div class="col-md-6 p-2">
+   							<input type="text" class="bg-light form-control" placeholder="Country">
+   						</div>
+   						<!--<div class="col-md-6 p-2">
+   							<input type="number" class="bg-light form-control" placeholder="Pincode">
+   						</div>-->
+   					</div>
+				    <div class="text-right">
+						<button type="button" class="btn-primary px-5 py-2 border-0" onclick="next1()">Next</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+			<!----Second part of Registeration Form------->
+
+		    <div class="col-lg-9 justify-content-center col-md-12" id="step2">
+		        <div class="registration-form p-4">
+		    	    <h2 class="h1 text-center text py-3">Registration Form</h2>
+		          	<h4>Professional Details</h4>
+		            <form>
+		            	<div class="row">
+			                <div class="col-md-6 p-2">
+			                   <input type="text" class="bg-light form-control" placeholder="Institute Association">
+			                </div>
+			                <!--<div class="col-md-6 p-2">
+			                   <input type="text" class="bg-light form-control" placeholder="Letest Publications">
+			                </div>   
+			                <div class="col-md-6 p-2">
+			                 	<select name="board" class="bg-light custom-select">
+			                  		<option selected disabled selected>Select Board</option>
+			                  		<option ng-repeat="x in regTeacherBoard" value="{{x}}">{{x}}</option>
+			                 	</select>
+			                </div>
+			                <div class="col-md-6 p-2">
+			                  	<select name="board" class="bg-light custom-select">
+			                   		<option selected disabled value="">Select Class</option>
+			                   		<option ng-repeat="x in regTeacherClass" value="{{x}}">{{x}}</option>
+			                  	</select>
+			                </div>
+			                <div class="col-md-6 p-2">
+			                  	<select name="board" class="bg-light custom-select">
+			                    	<option selected disabled value="">Select Subject</option>
+			                    	<option ng-repeat="x in regTeacherSubject" value="{{x}}">{{x}}</option>
+			                  	</select>
+			                </div>-->
+			                <div class="col-md-6 p-2">
+			                	<label>using Institute registry</label><br>
+			                  	<label><input type="radio" name="optradio" class="ml-3"> Yes</label>
+			                  	<label class="ml-5"><input type="radio" name="optradio "> No</label>
+			                </div>  
+			            </div>
+			        </form>
+			        <h4>Educational Qualification</h4>
+			        <div class="row">
+			            <div class="col-md-6 p-2">
+			        	    <input type="text" class="bg-light form-control" placeholder="Highest Degree">
+			            </div>
+			            <!--<div class="col-md-6 p-2">
+			                <input type="text" class="bg-light form-control" placeholder="Subject">
+			            </div>-->
+			            <div class="col-md-6 p-2">
+			                <input type="text" class="bg-light form-control" placeholder="passing out University">
+			            </div>
+			            <!--<div class="col-md-6 p-2">
+			                <input type="text" class="bg-light form-control" placeholder="Research work">
+			            </div>
+			            <div class="col-md-6 p-2">
+			            	<input type="text" class="bg-light form-control" placeholder="Recommendation">
+			            </div>-->
+			            <div class="col-md-6 p-2">
+			            	<input type="text" class="bg-light form-control" placeholder="Any Honour recieved">
+			            </div>
+			        </div>  
+			        <div class="button mt-2">
+			            <button type="button" class="btn-primary px-5 py-2 border-0" onclick="previous1()">Previous</button>
+			        	<button type="button" class="btn-primary px-5 py-2 border-0 mx-5 float-right" onclick="next2()">Next</button>
+			        </div>
+			    </div>
+			</div>
+
+			<!----Third part of Registeration Form------->
+
+			<div class="col-lg-9  col-md-12 h-50" id="step3">
+			   	<div class="registration-form p-4">
+			        <h3 class="h1 text-center text py-3">Registration Form</h3>
+				    <!--<h5 class="mt-1">Additional Details</h5>-->
+				    <form name="regTeacherForm">
+				     	<!--<div class="row">
+				            <div class="col-md-6 p-2">
+				                <input type="text" class="bg-light form-control" placeholder="Number of Student">
+				            </div>
+				            <div class="col-md-6 p-2">
+				                <input type="text" class="bg-light form-control" placeholder="% of student Crack IIT">
+				            </div>    
+				            <div class="col-md-6 p-2">
+				                <input type="text" class="bg-light form-control" placeholder="% of student Scored">
+				            </div>
+				    	</div>
+					    -->
+						<h5 class="mt-1">Class Details +</h5>
+						<div class="row">
+							<!--<div class="col-md-6 p-2">
+								<input type="text" class="bg-light form-control" placeholder="Enter Board">
+							</div>-->
+							<div class="col-md-6 p-2">
+								<input type="text" class="bg-light form-control" placeholder="Enter Skill" ng-model="regTeacher.classSubject" required>
+							</div>
+							<div class="col-md-6 p-2">
+								<input type="text" class="bg-light form-control" placeholder="Enter Level" ng-model="regTeacher.classLevel" required>
+							</div>
+							<div class="col-md-6 p-2">
+								<input type="text" class="bg-light form-control" placeholder="Enter Duration" ng-model="regTeacher.classDuration" required>
+							</div>
+							<div class="col-md-6 p-2">
+								<input type="text" class="bg-light form-control" placeholder="Gurudakshina" ng-model="regTeacher.classFee" required>
+							</div>
+							<div class="col-md-6 p-2">
+								<select name="board" class="bg-light custom-select">
+									<option selected disabled value="">Mode (per class/month)</option>
+									<option ng-repeat="x in regTeacherMode" value="{{x}}">{{x}}</option>
+								</select>
+							</div>  
+						</div>
+						<div class="button mt-5">
+							<button type="button" class="btn-primary px-5 py-2 border-0" onclick="previous2()">Previous</button>
+							<button type="button" class="btn-primary px-5 py-2 border-0 float-right mx-4" ng-click="regTeacherSubmit()"  ng-disabled="regTeacherForm.$invalid">Submit</button>
+						</div>  
+			 	    </form>
+				</div>
+			</div>
+		</div><!--- /row ----->
+	</div><!---- /container ---->
+
+
+	<!-- === /Footer === -->
+    <gk-footer></gk-footer>  
+    <!-- === /Footer === -->

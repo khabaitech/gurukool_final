@@ -1,0 +1,85 @@
+  <!-- ======= Footer ======= -->
+  <footer id="topbar" >
+    <div class="container">
+      <div class="row contact-info text-whit">
+        <div class="col-md-3 col-sm-12 text-cente">
+          <span><i class="icofont-smart-phone px-1"><a  data-toggle="modal" data-target="#get_in_touch_mes">Request a Call Back</a></i></span>
+        </div>
+        <div class="col-md-3 col-sm-12 text-center">
+          <span><i class="icofont-phone px-1 font-weight-bold">Call Us Now <a href="#">1800-212-7688 </a></i></span>
+        </div>
+        <div class="col-md-3 col-sm-12 text-center">
+          <span><i class="icofont-wechat px-1"><a href="#">Live Chat</a></i></span>
+        </div>
+        <div class="col-md-3 col-sm-12 text-center">
+          <span><i class="icofont-papers px-1"><a href="#/terms">Term of Use</a> | <a href="#/privacy_policy">Privacy Policy</a></i></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+  <!---Mobile Footer--->
+  <footer id="bottom_bar">
+    <div class="container-fluid d-md-flex">
+      <div class="contact-info text-whit">
+        <span><i class="icofont-smart-phone px-5"><a  data-toggle="modal" data-target="#get_in_touch_mes">Request a Call Back</a></i></span>
+        <span><i class="icofont-phone px-5"><a >1800-212-7688 </a></i></span>
+        <span><i class="icofont-wechat px-5"><a >Live Chat</a></i></span>
+        <span><i class="icofont-papers px-5"><a href="#/terms">T & C</a> | <a href="#/privacy_policy">Privacy Policy</a></i></span>
+      </div>
+    </div>
+  </footer>
+  <!---Mobile Footer--->
+
+
+  <!--request a call back modal-->
+ <!-- Get in Touch Modal --->
+
+ <div class="modal fade" id="get_in_touch_mes" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container get_contain">
+          <div class="col-lg-12 m-auto d-block">
+            <form class="px-1" name="requestCallBackForm">
+              <h3 class="text text-center font-weight-bold mt-4">Get In Touch</h3>
+                <div class="form-group mt-4">
+                  <input type="text" class="form-control px-5" id="name" name="name" placeholder="Enter Name" ng-model="callback.name" required>
+                  <!--placing icon using a span element-->
+                  <span class="icon fa fa-user-circle-o fa-lg"></span>
+                </div>
+
+                <div class="form-group">
+                  <input type="email" class="form-control px-5" id="email" name="email" placeholder="Enter Email" ng-model="callback.email" required>
+                  <span class="icon fa fa-envelope fa-lg"></span>
+                </div>
+
+                <div class="form-group form-row">
+                  <input type="text" class="form-control px-5" id="sub" name="sub" placeholder="Enter Phone" ng-model="callback.sub" required>
+                  <span class="icon fa fa-phone fa-lg"></span>
+                </div>
+
+                <div class="form-group">
+                  <textarea rows="5" cols="15" id="mesg" name="mesg" class="form-control px-5" placeholder="Message"  ng-model="callback.message" required></textarea>
+                  <span class="icon-textarea fa fa-envelope fa-lg pt-md-5"></span>
+                </div>
+
+                <div class=" text-center form-group ">
+                  <button type="button" class="btnSubmit btn text-white  px-4 py-2" ng-click="callBack()" >Send Now</button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Get in touch modal --->
+
+  <!--Request a call back modal-->
