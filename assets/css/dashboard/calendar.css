@@ -1,0 +1,118 @@
+.vertical-center {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+
+.calendar {
+  display: block;
+  background: #FFFFFF;
+  width: 100%;
+  border: solid 1px #CCCCCC;
+  margin: 10px auto;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 38px;
+  font-size: 16px;
+}
+.calendar header {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  cursor: default;
+  font-size: 1.4rem;
+  display: block;
+  font-weight: bold;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #7A8FF7;
+}
+.calendar header .month-display {
+  -webkit-box-align: center;
+          align-items: center;
+  height: 40px;
+
+}
+.calendar header .month-label {
+  -webkit-box-flex: 1;
+          flex: 1;
+  text-align: left;
+  padding-left: 10px;
+  font-size: 16px;
+}
+.calendar header .arrow {
+  flex-basis: 12%;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+  height: 100%;
+  font-size: 30px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.calendar .week:first-child {
+  border-top: none;
+}
+.calendar .day-names {
+  color: #7A8FF7;
+  font-weight: bold;
+  cursor: default;
+  font-size: 16px;
+}
+.calendar .day-names .day {
+  cursor: default;
+}
+.calendar .day-names .day:hover {
+  background: inherit;
+}
+.calendar .day {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+          flex: 1;
+  height: 35px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  padding: 6px;
+}
+.calendar .day:hover {
+  background: #EFEFEF;
+}
+.calendar .day:first-child {
+  border-left: none;
+}
+.calendar .day.today {
+  background: #d5f3ff;
+  width: 35px;
+  max-width: 35px;
+  height: 35px;
+}
+.calendar .day.different-month {
+  color: #C0C0C0;
+}
+.calendar .day.selected {
+  background:#7A8FF7;
+  color: #FFFFFF;
+  width: 35px;
+  max-width: 35px;
+  height: 35px;
+}

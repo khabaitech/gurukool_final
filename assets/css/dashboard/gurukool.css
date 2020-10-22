@@ -1,0 +1,50 @@
+.main{
+	padding-left:0px;
+	padding-right:0px;
+}
+.picture{
+	width: 100%;
+}
+.fix{
+	height: 100px;
+	width: 100px;
+	border: 1px solid black;
+}
+.pic{
+	height: 40px;
+	width: 40px;
+}
+.green{
+	background:#00FF00;
+}
+.pink{
+	background:#db25aa;
+}
+.red{
+	background: #e83366;
+}
+.yellow{
+	background: #db8e12;
+}
+.blue{
+	background: #229c9a;
+}
+.violet{
+	background: #332d9c;
+}
+.line{
+	line-height: 0.6;
+}
+hr{
+	margin-top: 0;		
+}
+.bg-primary{
+	background-color: #7A8FF7 !important;
+}
+.btn-primary{
+	background-color: #7A8FF7 !important;
+	border-color: #7A8FF7 !important;
+}
+#step2{
+	display: none;
+}
